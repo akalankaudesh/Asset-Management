@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="370.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.AssetManagement.controller.Add_Service_Form_Controller">
+   <children>
+      <JFXTextField fx:id="txtassetid" layoutX="11.0" layoutY="55.0" prefHeight="25.0" prefWidth="154.0" promptText="Enter Asset Id" />
+      <ImageView fx:id="imghome" fitHeight="41.0" fitWidth="41.0" layoutX="14.0" layoutY="6.0" onMouseClicked="#gotohome" onMouseEntered="#Start" onMouseExited="#End">
+         <image>
+            <Image url="@../assets/home-icon.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="60.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Service">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtdescription" layoutX="341.0" layoutY="55.0" prefHeight="25.0" prefWidth="154.0" promptText="Description" />
+      <JFXTextField fx:id="txtassetname" layoutX="10.0" layoutY="104.0" prefHeight="25.0" prefWidth="154.0" promptText="Asset Name" />
+      <JFXTextField fx:id="txtcost" layoutX="341.0" layoutY="104.0" prefHeight="25.0" prefWidth="154.0" promptText="Cost" />
+      <JFXDatePicker fx:id="dtpservicedate" layoutX="175.0" layoutY="90.0" prefHeight="28.0" prefWidth="154.0" promptText="Service Date" />
+      <JFXButton fx:id="btnsave" buttonType="RAISED" layoutX="14.0" layoutY="150.0" onAction="#saveondb" style="-fx-background-color: #6a93f2;" text="Save">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnclear" buttonType="RAISED" layoutX="78.0" layoutY="150.0" onAction="#clearcontent" style="-fx-background-color: #6a93f2;" text="Clear">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblassdservices" layoutX="10.0" layoutY="184.0" prefHeight="182.0" prefWidth="484.0">
+        <columns>
+          <TableColumn prefWidth="77.0" text="Service_ID" />
+          <TableColumn prefWidth="118.0" text="Asset_ID" />
+            <TableColumn prefWidth="165.0" text="Service_Date" />
+            <TableColumn minWidth="0.0" prefWidth="123.0" text="Cost" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnback" buttonType="RAISED" layoutX="451.0" layoutY="14.0" onAction="#gotoback" style="-fx-background-color: #6a93f2;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

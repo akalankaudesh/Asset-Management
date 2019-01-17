@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="321.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.AssetManagement.controller.Add_Employee_Form_Controller">
+   <children>
+      <ImageView fx:id="imghome" fitHeight="41.0" fitWidth="41.0" layoutX="21.0" layoutY="8.0" onMouseClicked="#gotohome" onMouseEntered="#Start" onMouseExited="#End">
+         <image>
+            <Image url="@../assets/home-icon.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtempname" layoutX="20.0" layoutY="71.0" prefHeight="25.0" prefWidth="355.0" promptText="Enter Name" />
+      <JFXTextField fx:id="txtempaddress" layoutX="20.0" layoutY="147.0" prefHeight="25.0" prefWidth="355.0" promptText="Address" />
+      <JFXTextField fx:id="txttelephone" layoutX="20.0" layoutY="185.0" prefHeight="25.0" prefWidth="355.0" promptText="Enter Telephone" />
+      <JFXTextField fx:id="txtsalary" layoutX="20.0" layoutY="223.0" prefHeight="25.0" prefWidth="355.0" promptText="Enter Salary" />
+      <Text layoutX="70.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Employee">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnsave" buttonType="RAISED" layoutX="22.0" layoutY="264.0" onAction="#savetheemployee" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #6a93f2;" text="Save">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnclear" buttonType="RAISED" layoutX="90.0" layoutY="264.0" onAction="#clearcontent" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #6a93f2;" text="Clear">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnback" buttonType="RAISED" layoutX="319.0" layoutY="14.0" onAction="#gotoback" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #6a93f2;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cboempdepartment" layoutX="22.0" layoutY="110.0" prefHeight="25.0" prefWidth="355.0" promptText="Select a Department" />
+   </children>
+</AnchorPane>

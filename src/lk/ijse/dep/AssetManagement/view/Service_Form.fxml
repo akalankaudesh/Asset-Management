@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.AssetManagement.controller.Service_Form_Controller">
+   <children>
+      <TableView fx:id="tblallservices" layoutX="12.0" layoutY="179.0" prefHeight="208.0" prefWidth="484.0">
+         <columns>
+            <TableColumn prefWidth="77.0" text="Service_ID" />
+            <TableColumn prefWidth="118.0" text="Asset_ID" />
+            <TableColumn prefWidth="165.0" text="Service_Date" />
+            <TableColumn minWidth="0.0" prefWidth="123.0" text="Cost" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="imghome" fitHeight="41.0" fitWidth="41.0" layoutX="14.0" layoutY="10.0" onMouseClicked="#gotohome" onMouseEntered="#Start" onMouseExited="#End">
+         <image>
+            <Image url="@../assets/home-icon.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="65.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Services">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtsearchservices" layoutX="155.0" layoutY="68.0" prefHeight="31.0" prefWidth="167.0" promptText="Search Services" />
+      <ImageView fx:id="imgsearch" fitHeight="31.0" fitWidth="30.0" layoutX="322.0" layoutY="68.0" onMouseClicked="#searchservice" onMouseEntered="#Start" onMouseExited="#End">
+         <image>
+            <Image url="@../assets/search.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnviewreport" buttonType="RAISED" disable="true" layoutX="387.0" layoutY="21.0" onAction="#viewreport" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #6a93f2;" text="View As Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btndeleteservice" buttonType="RAISED" disable="true" layoutX="387.0" layoutY="143.0" onAction="#deleterecord" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #6a93f2;" text="Delete">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnaddnewservice" buttonType="RAISED" layoutX="14.0" layoutY="143.0" onAction="#gotoaddservice" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #6a93f2;" text="Add New Service">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

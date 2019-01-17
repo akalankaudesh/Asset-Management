@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="386.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.AssetManagement.controller.Existing_Asset_Form_Controller">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="395.0" prefWidth="346.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btnback" buttonType="RAISED" layoutX="273.0" layoutY="8.0" onAction="#gtotoback" prefHeight="32.0" prefWidth="54.0" style="-fx-background-color: #6a93f2;" text="Back">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Asset">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <JFXTextField fx:id="txtdescripption" layoutX="17.0" layoutY="88.0" prefHeight="25.0" prefWidth="311.0" promptText="Enter Description" unFocusColor="#b4b7d7" />
+            <JFXTextField fx:id="txtmodel" layoutX="14.0" layoutY="194.0" prefHeight="25.0" prefWidth="311.0" promptText="Enter Model" unFocusColor="#b4b7d7" />
+            <JFXTextField fx:id="txtbrand" layoutX="14.0" layoutY="230.0" prefHeight="25.0" prefWidth="311.0" promptText="Enter Brand" unFocusColor="#b4b7d7" />
+            <JFXTextField fx:id="txtprice" layoutX="14.0" layoutY="267.0" prefHeight="25.0" prefWidth="311.0" promptText="Enter Price" unFocusColor="#b4b7d7" />
+            <JFXButton fx:id="btnupdate" buttonType="RAISED" layoutX="17.0" layoutY="341.0" onAction="#updatethedb" prefHeight="32.0" prefWidth="61.0" style="-fx-background-color: #6a93f2;" text="Update">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnclear" buttonType="RAISED" layoutX="86.0" layoutY="341.0" onAction="#clearcontent" prefHeight="32.0" prefWidth="54.0" style="-fx-background-color: #6a93f2;" text="Clear">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="cbodepartment" layoutX="18.0" layoutY="123.0" prefHeight="25.0" prefWidth="311.0" promptText="Select a Department" />
+            <JFXComboBox fx:id="cbovendor" layoutX="18.0" layoutY="159.0" prefHeight="25.0" prefWidth="311.0" promptText="Select a Vendor" />
+            <JFXComboBox fx:id="cboassettype" layoutX="18.0" layoutY="54.0" prefHeight="25.0" prefWidth="311.0" promptText="Select the Asset Type" />
+            <JFXDatePicker fx:id="dtpdateselect" layoutX="16.0" layoutY="302.0" promptText="Select a Date" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

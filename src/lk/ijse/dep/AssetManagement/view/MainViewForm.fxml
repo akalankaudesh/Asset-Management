@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="338.0" prefWidth="553.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.AssetManagement.controller.MainViewFormController">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="200.0" layoutX="171.0" layoutY="13.0">
+         <image>
+            <Image url="@../assets/ijse-logo.gif" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="160.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asset Management System" textAlignment="CENTER" wrappingWidth="222.9830722808838">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Glow level="0.62" />
+         </effect>
+      </Text>
+      <ImageView fx:id="imgemployee" disable="true" layoutX="119.0" layoutY="137.0" onMouseClicked="#gotoemployee" onMouseEntered="#Start" onMouseExited="#End" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../assets/customers.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgasset" fitHeight="80.0" fitWidth="80.0" layoutX="48.0" layoutY="133.0" onMouseClicked="#gotoassets" onMouseEntered="#Start" onMouseExited="#End" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/assets.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgdepartment" fitHeight="80.0" fitWidth="80.0" layoutX="176.0" layoutY="133.0" onMouseClicked="#gotodepartment" onMouseEntered="#Start" onMouseExited="#End" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/departments.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgservices" fitHeight="80.0" fitWidth="80.0" layoutX="299.0" layoutY="133.0" onMouseClicked="#gotoservices" onMouseEntered="#Start" onMouseExited="#End" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/services.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgvendors" fitHeight="88.0" fitWidth="80.0" layoutX="423.0" layoutY="131.0" onMouseClicked="#gotovendors" onMouseEntered="#Start" onMouseExited="#End" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/vendor.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutX="46.0" layoutY="95.0" opacity="0.85" prefWidth="450.0">
+         <effect>
+            <Reflection fraction="0.61" topOpacity="0.56" />
+         </effect>
+      </Separator>
+      <Text fx:id="lblguide" layoutX="163.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select any options" textAlignment="CENTER" wrappingWidth="222.98306500911713">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="1.0" radius="0.0" spread="0.1" width="0.0" />
+         </effect>
+      </Text>
+      <Separator layoutX="52.0" layoutY="235.0" opacity="0.85" prefWidth="450.0">
+         <effect>
+            <Reflection fraction="0.61" topOpacity="0.56" />
+         </effect>
+      </Separator>
+      <Text layoutX="431.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright @ akalanka udesh" wrappingWidth="119.98307228088379">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
