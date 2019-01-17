@@ -2,10 +2,10 @@
 
 Asset Manager is an management software tool to manage organizational assets. It has ability to maintain a record from current assets and their services. By monitoring the assets it's very easy to maintain them. This software main interface consists of four main parts:
 
-    *Assets
-    *Department
-    *Services
-    *Vendors
+    * Assets
+    * Department
+    * Services
+    * Vendors
     
 ![mainpage](./screenshot/MainPage.JPG) 
 
