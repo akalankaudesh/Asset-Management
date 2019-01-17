@@ -7,7 +7,7 @@ Asset Manager is an management software tool to manage organizational assets. It
     * Services
     * Vendors
     
-    ![mainpage](./screenshot/MainPage.JPG) 
+![mainpage](./screenshot/MainPage.JPG) 
 
 ## Assets
 
